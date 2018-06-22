@@ -14,10 +14,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::check())
                         <li>
-                            <a href="#">
+                           <a href="{{ route('items.create') }}">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                 アイテムを追加
-                              </a>
+                            </a>
                         </li>
 
                         <li class="dropdown">
@@ -28,6 +28,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{ route('ranking.want') }}">Wantランキング</a></li>
+                                <li><a href="{{ route('ranking.have') }}">Haveランキング</a></li>
                             </ul>
                         </li>
 
